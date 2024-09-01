@@ -1,0 +1,10 @@
+00:55:36 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12588	    104	   2052	  14744	   3998	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+
+00:55:36 Build Finished. 0 errors, 0 warnings. (took 346ms)
+

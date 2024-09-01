@@ -1,0 +1,444 @@
+21:49:59 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9664	     24	   1720	  11408	   2c90	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+21:50:25 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9664	     24	   1720	  11408	   2c90	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+21:50:26 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9492	     12	   1720	  11224	   2bd8	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+21:52:02 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Blink':
+../Core/Src/main.c:72:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   72 |         printf("Blink!\r\n");
+      |         ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:72:9: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   72 |         printf("Blink!\r\n");
+      |         ^~~~~~
+../Core/Src/main.c:72:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+arm-none-eabi-gcc -o "shareAPIsBetweenApp.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: shareAPIsBetweenApp.elf has a LOAD segment with RWX permissions
+Finished building target: shareAPIsBetweenApp.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp.elf  > "shareAPIsBetweenApp.list"
+   text	   data	    bss	    dec	    hex	filename
+  12748	    116	   2052	  14916	   3a44	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp.list
+ 
+21:52:04 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9492	     12	   1720	  11224	   2bd8	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+21:52:26 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "shareAPIsBetweenApp.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: shareAPIsBetweenApp.elf has a LOAD segment with RWX permissions
+Finished building target: shareAPIsBetweenApp.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp.elf  > "shareAPIsBetweenApp.list"
+   text	   data	    bss	    dec	    hex	filename
+  12748	    116	   2052	  14916	   3a44	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp.list
+ 
+21:52:27 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9492	     12	   1720	  11224	   2bd8	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+21:52:33 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12748	    116	   2052	  14916	   3a44	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+21:52:34 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9492	     12	   1720	  11224	   2bd8	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+21:57:35 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12748	    116	   2052	  14916	   3a44	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+21:57:36 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9492	     12	   1720	  11224	   2bd8	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+22:00:42 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Blink':
+../Core/Src/main.c:72:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   72 |         HAL_UART_Transmit(&huart2, "Blink!\r\n", 15, 100);
+      |                                    ^~~~~~~~~~~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32g0xx_hal_conf.h:319,
+                 from ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:1633:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1633 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "shareAPIsBetweenApp.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: shareAPIsBetweenApp.elf has a LOAD segment with RWX permissions
+Finished building target: shareAPIsBetweenApp.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp.elf  > "shareAPIsBetweenApp.list"
+   text	   data	    bss	    dec	    hex	filename
+  10024	     24	   1720	  11768	   2df8	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp.list
+ 
+22:00:44 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9492	     12	   1720	  11224	   2bd8	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+22:00:54 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10024	     24	   1720	  11768	   2df8	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+22:00:55 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9492	     12	   1720	  11224	   2bd8	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+22:01:00 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10024	     24	   1720	  11768	   2df8	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+22:01:01 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9492	     12	   1720	  11224	   2bd8	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+22:02:28 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Blink':
+../Core/Src/main.c:72:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   72 |         HAL_UART_Transmit(&huart2, "Blink!\r\n", 25, 100);
+      |                                    ^~~~~~~~~~~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32g0xx_hal_conf.h:319,
+                 from ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:1633:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1633 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "shareAPIsBetweenApp.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: shareAPIsBetweenApp.elf has a LOAD segment with RWX permissions
+Finished building target: shareAPIsBetweenApp.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp.elf  > "shareAPIsBetweenApp.list"
+   text	   data	    bss	    dec	    hex	filename
+  10024	     24	   1720	  11768	   2df8	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp.list
+ 
+22:02:31 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9492	     12	   1720	  11224	   2bd8	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+22:04:12 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Blink':
+../Core/Src/main.c:72:36: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+   72 |         HAL_UART_Transmit(&huart2, "Blink!\r\n", 25, 100);
+      |                                    ^~~~~~~~~~~~
+      |                                    |
+      |                                    char *
+In file included from ../Core/Inc/stm32g0xx_hal_conf.h:319,
+                 from ../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_uart.h:1633:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1633 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "shareAPIsBetweenApp.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: shareAPIsBetweenApp.elf has a LOAD segment with RWX permissions
+Finished building target: shareAPIsBetweenApp.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp.elf  > "shareAPIsBetweenApp.list"
+   text	   data	    bss	    dec	    hex	filename
+  10024	     24	   1720	  11768	   2df8	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp.list
+ 
+22:04:15 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9492	     12	   1720	  11224	   2bd8	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+22:28:41 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10024	     24	   1720	  11768	   2df8	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+22:28:42 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "shareAPIsBetweenApp2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp2\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: shareAPIsBetweenApp2.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp2.elf  > "shareAPIsBetweenApp2.list"
+   text	   data	    bss	    dec	    hex	filename
+   9492	     12	   1720	  11224	   2bd8	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp2.list
+ 
+22:30:01 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "shareAPIsBetweenApp.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: shareAPIsBetweenApp.elf has a LOAD segment with RWX permissions
+Finished building target: shareAPIsBetweenApp.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp.elf  > "shareAPIsBetweenApp.list"
+   text	   data	    bss	    dec	    hex	filename
+  12756	    116	   2052	  14924	   3a4c	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp.list
+ 
+22:30:02 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "shareAPIsBetweenApp2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp2\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: shareAPIsBetweenApp2.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp2.elf  > "shareAPIsBetweenApp2.list"
+   text	   data	    bss	    dec	    hex	filename
+  12600	    104	   2052	  14756	   39a4	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp2.list
+ 
+22:30:29 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12756	    116	   2052	  14924	   3a4c	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+22:30:29 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12600	    104	   2052	  14756	   39a4	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+22:31:06 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "shareAPIsBetweenApp.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: shareAPIsBetweenApp.elf has a LOAD segment with RWX permissions
+Finished building target: shareAPIsBetweenApp.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp.elf  > "shareAPIsBetweenApp.list"
+   text	   data	    bss	    dec	    hex	filename
+  12756	    116	   2052	  14924	   3a4c	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp.list
+ 
+22:31:08 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12600	    104	   2052	  14756	   39a4	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+22:31:23 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12756	    116	   2052	  14924	   3a4c	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+22:31:24 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12600	    104	   2052	  14756	   39a4	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+00:47:56 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "shareAPIsBetweenApp.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: shareAPIsBetweenApp.elf has a LOAD segment with RWX permissions
+Finished building target: shareAPIsBetweenApp.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp.elf  > "shareAPIsBetweenApp.list"
+   text	   data	    bss	    dec	    hex	filename
+  12760	    116	   2052	  14928	   3a50	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp.list
+ 
+00:47:58 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "shareAPIsBetweenApp2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp2\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: shareAPIsBetweenApp2.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp2.elf  > "shareAPIsBetweenApp2.list"
+   text	   data	    bss	    dec	    hex	filename
+  12588	    104	   2052	  14744	   3998	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp2.list
+ 
+00:48:18 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12760	    116	   2052	  14928	   3a50	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+00:48:19 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12588	    104	   2052	  14744	   3998	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+00:48:23 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12760	    116	   2052	  14928	   3a50	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+00:48:24 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12588	    104	   2052	  14744	   3998	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+00:53:49 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12760	    116	   2052	  14928	   3a50	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+00:53:49 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G070xx -c -I../Core/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc -I../Drivers/STM32G0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "shareAPIsBetweenApp2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\lagoeirl\STM32CubeIDE\sharedAPIs\shareAPIsBetweenApp2\STM32G070RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="shareAPIsBetweenApp2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: shareAPIsBetweenApp2.elf
+ 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+arm-none-eabi-objdump -h -S shareAPIsBetweenApp2.elf  > "shareAPIsBetweenApp2.list"
+   text	   data	    bss	    dec	    hex	filename
+  12588	    104	   2052	  14744	   3998	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+Finished building: shareAPIsBetweenApp2.list
+ 
+00:53:58 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12760	    116	   2052	  14928	   3a50	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+00:53:59 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12588	    104	   2052	  14744	   3998	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 
+00:55:35 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12760	    116	   2052	  14928	   3a50	shareAPIsBetweenApp.elf
+Finished building: default.size.stdout
+ 
+00:55:36 **** Incremental Build of configuration Debug for project shareAPIsBetweenApp2 ****
+make -j8 all 
+arm-none-eabi-size  shareAPIsBetweenApp2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12588	    104	   2052	  14744	   3998	shareAPIsBetweenApp2.elf
+Finished building: default.size.stdout
+ 

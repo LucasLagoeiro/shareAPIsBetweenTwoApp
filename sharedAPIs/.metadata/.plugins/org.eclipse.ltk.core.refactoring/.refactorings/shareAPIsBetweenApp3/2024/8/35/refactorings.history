@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;shareAPIsBetweenApp3/shareAPIsBetweenApp2.ioc&apos; to &apos;shareAPIsBetweenApp3ioc&apos;" description="Rename resource &apos;shareAPIsBetweenApp2.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="shareAPIsBetweenApp2.ioc" name="shareAPIsBetweenApp3ioc" stamp="1725138738137" updateReferences="true"/>
+</session>
